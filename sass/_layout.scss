@@ -1,0 +1,65 @@
+#About{
+    background-image: url(../imgs/arche.jpg);
+    background-size: 100% 100%;
+    height: 95vh;
+}
+#Skills {
+    height: 75vh;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+
+}
+.icon__heading {
+    text-align: center;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    color:#ffffff;
+    font-size: 2rem;
+
+    &--back {
+        text-align: center;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+    transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform:translateX(100px);
+    }
+    80% {
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform:translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
