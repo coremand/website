@@ -1,0 +1,60 @@
+/* Next & previous buttons */
+.button {
+    &__prev, &__next{
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+       -webkit-user-select: none;
+    }
+    &__next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    &__prev:hover,
+    &__next:hover{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+.slides-image {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.text__list {
+    display: block;
+}
+.container{
+    position: relative;
+    top: 4rem;
+}
+.container1 {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}

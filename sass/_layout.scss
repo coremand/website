@@ -1,30 +1,29 @@
 #About{
     background-image: url(../imgs/arche.jpg);
     background-size: 100% 100%;
-    height: 95vh;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    
+    &:hover {
+        background-color: #ddd;
+        color: #000000;
+    }
 }
 #Skills {
-    height: 75vh;
+    overflow: hidden;
+    background-color: #e3e1da;
+    height: 95vh;
 }
-.container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 3rem;
 
-}
-.icon__heading {
-    text-align: center;
-    margin-top: 3rem;
-    text-transform: uppercase;
-    color:#ffffff;
-    font-size: 2rem;
 
-    &--back {
-        text-align: center;
-        margin-bottom: 2rem;
-        text-transform: uppercase;
-    }
+#Work {
+    background-image: linear-gradient(to right bottom, rgba(237, 235, 230, 0.8), rgba(186, 183, 175, 0.8)),url(../imgs/photo1.jpg);
+    background-size: cover;
+    height: 95vh;
+    
 }
 
 @keyframes moveInLeft {

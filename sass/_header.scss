@@ -1,0 +1,52 @@
+.icon__heading {
+    text-align: center;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    color:#ffffff;
+    font-size: 2rem;
+
+    &--back {
+        text-align: center;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+}
+.heading-secondary {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+.heading-tertiary {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-primary {
+    margin-top: 2rem;
+    text-align: center;
+    color: #ffffff;
+    transition: all .5s;
+
+    &--main {
+        display: block;
+        font-size: 2rem;
+        text-transform: uppercase;
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+    }
+    &--sub {
+        display: block;
+        font-size: 4rem;
+        text-transform: uppercase;
+        animation-name: moveInRight;
+        animation-duration: 3s;
+    }
+
+    &--sub-1 {
+        display: block;
+        font-size: 2rem;
+        text-transform: uppercase;
+        animation-name: moveInBottom;
+        animation-duration: 3s;
+    }
+}

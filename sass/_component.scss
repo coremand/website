@@ -1,57 +1,23 @@
 .nav__link {
     display: flex;
-    justify-content: flex-start;
-    
+    justify-content: flex-end;
+    background-color: #000000;
+    position: fixed;
+    overflow: hidden;
+    object-fit: cover;
+    top: -100px;
+    width: 100%;
+    z-index: 200;
+    transition: top 0.3s;
 
     &--list {
         list-style: none;
         margin: 2rem 3rem;
-        width: 1rem;
+        display: inline;
     }
     &--container{
         display: flex;
-        
-    }
-    &--icon {
-        height: 2rem;
-        width: 2rem;
-        color: #ffffff;
-        align-self: center;
-    }
-    
-}
-a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.heading-primary {
-    margin-top: 2rem;
-    text-align: center;
-    color: #ffffff;
-    transition: all .5s;
-
-    &--main {
-        display: block;
-        font-size: 2rem;
-        text-transform: uppercase;
-        animation-name: moveInLeft;
-        animation-duration: 3s;
-    }
-    &--sub {
-        display: block;
-        font-size: 4rem;
-        text-transform: uppercase;
-        animation-name: moveInRight;
-        animation-duration: 3s;
-    }
-
-    &--sub-1 {
-        display: block;
-        font-size: 2rem;
-        text-transform: uppercase;
-        animation-name: moveInBottom;
-        animation-duration: 3s;
+        justify-content: center;   
     }
 }
 .img {
@@ -60,8 +26,7 @@ a {
     padding: 2rem 0;
     color: #ffffff;
     display: flex;
-    justify-content: space-around;
-    overflow: hidden;
+    justify-content: center;
     transition: all .5;
 
     &__one {
@@ -69,47 +34,41 @@ a {
         width: 10rem;
         border: 1px solid #000000;
         border-radius: 50%;
+        margin-right: 3rem;
     }
 
     &__one:hover {
-        -webkit-transform: scale(2, 2);
+        -webkit-transform: scale(1.3, 1.3);
         transform: scale(1.3, 1.3);
     }
 }
-.text__list {
-    display: block;
-}
-
-.heading-secondary {
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 3rem;
-}
 .cards {
-    height: 20rem;
-    width: 15rem;
-    position: relative;
-    perspective: 150rem;
     -moz-perspective: 150rem;
+    perspective: 150rem;
+    height: 25rem;
+    width: 20rem;
+    position: relative;
 
-    &__side {
-       
-        height: 20rem;
-        width: 15rem;
+    &__side{
+        background-color: aqua;
+        height: 25rem;
+        width: 20rem;
+        transition: all .8s ease;
+        transform-style: preserve-3d;
         position: absolute;
+        top: 0;
+        left: 0;
         backface-visibility: hidden;
-        transition: all .5s;
-    
+
         &--front {
-            background-color: #6B6C5D;
+            background-color: #929394;
         }
-        &--back{
+        &--back {
+            background-image: linear-gradient(to right bottom, #3c3f42, #dadde3);
             transform: rotateY(180deg);
-            background-image: linear-gradient(to right bottom, #B6C508 , #E9FB17);
-            
         }
-        
     }
+    
     &:hover &__side--front {
         transform: rotateY(-180deg);
     }
@@ -117,7 +76,7 @@ a {
         transform: rotateY(0);
     }
 
-    &__progress {
+   &__progress {
            width: 12rem;
            background-color: #B2B7BB;
            font-size: 2rem;
@@ -154,17 +113,50 @@ a {
             text-align: center;
         }
     }
+    &__list {
+        list-style: none;
+        margin-top: 1px;
+        
+
+        &--sub {
+            border-bottom: 1px solid #6B6C5D;
+            padding: 1rem;
+            text-transform: uppercase;
+            background-color: #6B6C5D;
+            margin-top: 1px;
+            color: #ffffff;
+        }
+    }
 }
 .back__text{
     margin: 2rem 2rem;
     
 }
-ul {
-    list-style: none;
-    
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    &__numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+  }
+  /* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
 }
-li{
-    
-    margin: 0 3rem;
-    text-transform: uppercase;
-}
+
