@@ -19,6 +19,7 @@
 .heading-tertiary {
     text-align: center;
     text-transform: uppercase;
+    padding-top: 2rem;
 }
 
 .heading-primary {
@@ -48,5 +49,11 @@
         text-transform: uppercase;
         animation-name: moveInBottom;
         animation-duration: 3s;
+    }
+}
+.heading-tertiary--1{
+    &--main {
+        padding: 2rem 0;
+        color: #199e3d;
     }
 }

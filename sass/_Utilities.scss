@@ -49,7 +49,7 @@
 }
 .container{
     position: relative;
-    top: 4rem;
+    top:2rem;
 }
 .container1 {
     height: 80vh;
@@ -57,4 +57,36 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.contact{ 
+    display: block;
+}
+
+
+.flex-container{
+    display: flex;
+    align-items: baseline;
+  
+}
+.fa-map-marker-alt{
+    margin-right:2rem;
+    margin-left: 40rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #199e3d;
+}
+.fa-envelope-square{
+    margin-right: 1.4rem;
+    margin-left: 40rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #199e3d;
+}
+.fa-phone-alt{
+    margin-right: 1.2rem;
+    margin-left: 40rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #199e3d;
 }
