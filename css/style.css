@@ -7,7 +7,6 @@
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 600; }
 
@@ -15,11 +14,12 @@ body {
   display: flex;
   justify-content: flex-end;
   background-color: #000000;
+  flex-wrap: wrap;
   position: fixed;
   overflow: hidden;
-  object-fit: cover;
   top: -100px;
-  width: 94.9%;
+  width: 100%;
+  padding-right: 3rem;
   z-index: 200;
   transition: top 0.3s; }
   .nav__link--list {
@@ -61,7 +61,8 @@ body {
   perspective: 150rem;
   height: 25rem;
   width: 20rem;
-  position: relative; }
+  position: relative;
+  margin: 2rem 0; }
   .cards__side {
     height: 25rem;
     width: 20rem;
@@ -164,8 +165,7 @@ button {
 
 #Skills {
   overflow: hidden;
-  background-color: #e3e1da;
-  height: 95vh; }
+  background-color: #e3e1da; }
 
 #Work {
   background-image: linear-gradient(to right bottom, rgba(237, 235, 230, 0.8), rgba(186, 183, 175, 0.8)), url(../imgs/photo1.jpg);
@@ -306,16 +306,12 @@ footer {
   display: block; }
 
 .container {
-  position: relative;
-  top: 2rem; }
+  position: relative; }
 
 .container1 {
-  height: 80vh;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 3rem; }
+  flex-wrap: wrap; }
 
 .contact {
   display: block; }
@@ -326,21 +322,30 @@ footer {
 
 .fa-map-marker-alt {
   margin-right: 2rem;
-  margin-left: 40rem;
+  margin-left: 30rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #199e3d; }
+  @media only screen and (max-width: 1024px) {
+    .fa-map-marker-alt {
+      margin-left: 15rem; } }
 
 .fa-envelope-square {
   margin-right: 1.4rem;
-  margin-left: 40rem;
+  margin-left: 30rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #199e3d; }
+  @media only screen and (max-width: 1024px) {
+    .fa-envelope-square {
+      margin-left: 15rem; } }
 
 .fa-phone-alt {
   margin-right: 1.2rem;
-  margin-left: 40rem;
+  margin-left: 30rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #199e3d; }
+  @media only screen and (max-width: 1024px) {
+    .fa-phone-alt {
+      margin-left: 15rem; } }

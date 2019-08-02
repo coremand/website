@@ -2,11 +2,12 @@
     display: flex;
     justify-content: flex-end;
     background-color: #000000;
+    flex-wrap: wrap;
     position: fixed;
     overflow: hidden;
-    object-fit: cover;
     top: -100px;
-    width: 94.9%;
+    width: 100%;
+    padding-right: 3rem;
     z-index: 200;
     transition: top 0.3s;
 
@@ -59,6 +60,8 @@
     height: 25rem;
     width: 20rem;
     position: relative;
+    margin: 2rem 0;
+
 
     &__side{
         height: 25rem;
